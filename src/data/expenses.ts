@@ -33,11 +33,11 @@ const expenses: expensesStr[] = [
         key: 'e4',
         item: 'New Desk (Wooden)',
         amount: '450',
-        date: createRandomDate(new Date(2020, 0, 1), new Date()),
+        date: randomDate(new Date(2020, 0, 1), new Date()),
     },
 ];
 
-function createRandomDate(start: Date, end: Date) {
+function randomDate(start: Date, end: Date) {
 
     let newDateFull: Date = new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 
