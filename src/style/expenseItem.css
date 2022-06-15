@@ -1,0 +1,94 @@
+.date {
+    background-color: #341182;
+    padding: 0.2em;
+    width: inherit;
+    font-weight: 600;
+    color: antiquewhite;
+    border-radius: 5px 5px 0px 0px;
+    border-top: 0.2px solid #341182;
+    /* border-right: 0.2px solid #341182; */
+    border-left: 0.2px solid #341182;
+  }
+  
+  .payment {
+    color: #341182;
+    border-left: 0.2px solid #8789d1;
+    border-right: 0.2px solid #8789d1;
+  }
+  
+  .paymentText {
+    padding: 0.2em;
+    font-size: medium;
+    max-width: 7.5em;
+    overflow-wrap: anywhere;
+    overflow: auto;
+    height: calc(0.4498 * var(--mainGridElementHeight));
+  }
+  
+  .amount {
+    background-color: #341182;
+    padding: 0.2em;
+    width: inherit;
+    font-weight: 600;
+    color: antiquewhite;
+    /* border-right: 0.2px solid #341182; */
+    border-left: 0.2px solid #341182;
+  }
+  
+  .changeButton {
+    background-color: rgba(216, 213, 232, 0.63);
+    color: #362d4a;
+    border-radius: 0px 0px 5px 5px;
+    font-size: small;
+    border-top: 1px solid #362d4a;
+    border-left: 0.2px solid #8789d1;
+    border-right: 0.2px solid #8789d1;
+    border-bottom: 0.2px solid #8789d1;
+  }
+  
+  .changeButton:hover {
+    background-color: #341182;
+    color: bisque;
+    cursor: pointer;
+    border-top: 1px solid rgba(216, 213, 232, 0.63)
+  }
+  
+  /* .changeButton:active {
+    background-color: rgb(248, 248, 248);
+    color: darkmagenta;
+    border-top: 1px solid rgb(248, 248, 248);
+  } 
+  
+  Nicht mehr nötig, da das Modal es eh bedeckt
+  
+  */
+  
+  .grid-container {
+    display: inline-grid;
+    grid-gap: 0px;
+    justify-content: stretch;
+    align-content: initial;
+    width: auto;
+    border-radius: 5px;
+  }
+  
+  .grid-container>div {
+    text-align: center;
+    padding: 0.3em 0;
+  }
+  
+  @media (max-width: 575.98px) {
+  
+    .grid-container {
+      justify-content: safe;
+    }
+  
+  }
+  
+  @media (min-width: 576px) {
+  
+    .grid-container {
+      justify-content: stretch;
+    }
+  
+  }

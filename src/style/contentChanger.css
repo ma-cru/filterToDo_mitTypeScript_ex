@@ -1,0 +1,37 @@
+.general {
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    color: #382d77;
+    border: 1px solid cadetblue;
+    background-color: #0b5ed7;
+    color: #fff;
+}
+
+.input > input{
+    padding: 0.2em;
+    z-index: 10;
+    color: #382d77;
+    border: 1px solid cornsilk;
+}
+
+.input>label, .input>input {
+    padding: 0.2em;
+    max-width: 80%;
+}
+
+.input>button {
+    color: #382d77;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 0.2em;
+    border: 1px solid cornsilk;
+}
+
+.input>button:hover {
+    background-color: #382d77;
+    color: antiquewhite;
+}
+
+.modalTitle {
+    color: #382d77;
+}

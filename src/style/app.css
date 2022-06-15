@@ -1,0 +1,107 @@
+html {
+  --scrollbarBG: rgba(196, 191, 219, 0.63);
+  --thumbBG: rgb(233, 224, 213);
+  --mainGridElementHeight: 210.1px;
+}
+
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+  border-radius: 2px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.flexBox {
+  display: flex;
+  margin: 1rem;
+}
+
+.flexBox button {
+  font-size: small;
+}
+
+.mainGrid {
+  display: grid;
+  grid-column-gap: 0.7em;
+  grid-row-gap: 0.9em;
+  grid-template-rows: none;
+  background-color: white;
+  padding: 0.5em 0.5em 0.7em 0.5em;
+  justify-content: space-evenly;
+  align-content: space-around;
+  border: 1px solid cadetblue;
+  /* oder einfach als ein bisschen mehr als die Anzahl an Spalten einstellen */
+  border-radius: 5px;
+  height: fit-content;
+  margin: 0.5em;
+}
+
+.mainGrid>div {
+  text-align: center;
+  padding: revert;
+  background-color: rgba(161, 144, 242, 0.63);
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px 1px #8789d1;
+  /* height: calc(var(--mainGridElementHeight)); */
+}
+
+.addButton {
+  background-color: rgba(216, 213, 232, 0.63);
+  color: #362d4a;
+  border-radius: 5px;
+  font-size: small;
+  border: 1px solid blueviolet;
+  margin: 0.5em;
+}
+
+.addButton:hover {
+  background-color: blueviolet;
+  color: bisque;
+  cursor: pointer;
+  border: 1px solid blueviolet;
+}
+
+.noEntryP {
+  background-color: white;
+  padding: 0.5em 0.5em 0.7em 0.5em;
+  border: 1px solid cadetblue;
+  /* oder einfach als ein bisschen mehr als die Anzahl an Spalten einstellen */
+  border-radius: 5px;
+  height: fit-content;
+  width: fit-content;
+  margin: 0.5em;
+  color: #382d77;
+  background-color: whitesmoke;
+}
+
+@media (max-width: 575.98px) {
+
+  .mainGrid {
+    grid-template-columns: repeat(3, 6.3em);
+    /* height: calc(2.19 *var(--mainGridElementHeight)); */
+    width: fit-content;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .mainGrid {
+    grid-template-columns: repeat(4, 6.3em);
+    /* height: calc(1.12 * var(--mainGridElementHeight)); */
+    width: fit-content;
+  }
+}

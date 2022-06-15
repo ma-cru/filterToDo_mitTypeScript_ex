@@ -1,0 +1,56 @@
+.expenses-filter {
+    color: white;
+}
+
+.expenses-filter__control {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    margin: 0.1rem 0;
+    padding: 0.2em;
+}
+
+.expenses-filter label {
+    margin-bottom: 0.2rem;
+    padding: 0.2em;
+    margin-right: 0.5em;
+}
+
+.expenses-filter select {
+    font: inherit;
+    padding: 0.1em 0.4em;
+    font-weight: normal;
+    border-radius: 6px;
+    border: 1px solid cornflowerblue;
+}
+
+.expenses-filter select:focus-visible {
+    outline: 0px;
+}
+
+.cancelButton {
+    margin: 0.5em 0.5em 0.5em 0.8em;
+    background-color: rgba(216, 213, 232, 0.63);
+    color: #230070;
+    border-radius: 5px;
+    font-size: small;
+    border: 1px solid blueviolet;
+}
+
+.cancelButton:hover {
+    background-color: blueviolet;
+    color: bisque;
+    cursor: pointer;
+    border: 1px solid blueviolet;
+}
+
+/*
+
+select:-internal-list-box {
+    border-radius: 0px 0px 6px 6px;
+} 
+
+greift auch nicht
+
+*/

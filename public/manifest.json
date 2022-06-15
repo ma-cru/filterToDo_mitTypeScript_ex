@@ -1,0 +1,15 @@
+{
+  "short_name": "TS To-Do App",
+  "name": "TypeScript To-Do Filter App",
+  "icons": [
+    {
+      "src": "icons8-code-96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
